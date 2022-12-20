@@ -99,7 +99,7 @@ export const Cruts = () => {
       </div>
     </div>
       <div className="btn-wrap">
-      <button className='btn btn-danger w-100' type='submit'>Continue to Payment</button>
+      <button className='btn btn-foot w-100' type='submit'>Continue to Payment</button>
       </div>
     </>
   )

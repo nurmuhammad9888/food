@@ -4,7 +4,7 @@ import "./card.css"
 
 export const Cards = () => {
   return (
-    <div>
+    <>
         <li className='cards'>
             <img className='card-image' src={ImageOne} width="149" height="135" alt="Palov" />
             <div className="text-wrapper">
@@ -13,6 +13,6 @@ export const Cards = () => {
             <p className='card-texttwo'>20 Bowls available</p>
             </div>
         </li>
-    </div>
+    </>
   )
 }

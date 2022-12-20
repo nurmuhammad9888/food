@@ -37,3 +37,17 @@ line-height: 140%;
 color: #FFFFFF;
 
 }
+
+.bg-btns {
+    background: #EA7C69;
+    border: none;
+}
+
+.bg-btns:hover {
+    background: #EA7C69;
+}
+
+.texts-bg {
+    border: 1px solid #8b8b8b;
+    color: #EA7C69 !important;
+}

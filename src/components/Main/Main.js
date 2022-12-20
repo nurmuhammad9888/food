@@ -4,7 +4,7 @@ import Image from "../../assets/images/Image 1.png"
 import { Cards } from "../Cards/Cards"
 
 export const Main = () => {
-    let fakeCard = Array(9).fill(1)
+    let fakeCard = Array(12).fill(1)
     console.log(fakeCard);
   return (
     <div className='wrapper-main'>

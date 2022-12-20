@@ -73,6 +73,25 @@ p {
     color: #ABBBC2;
 }
 
+.btn-foot {
+    padding: 14px 0;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    color: #FAFAFA;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    background-color: #EA7C69;
+}
+
+.btn-foot:hover {
+    background-color: #EA7C69;
+
+}
+
 .texts-crut-wrap {
     padding: 10px 0 20px 0;
 }
