@@ -1,0 +1,78 @@
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.cruts-wrapper {
+    height: 454px;
+    overflow-y: scroll;
+}
+
+.disc-wrap:nth-child(1) {
+    padding-bottom: 15px;
+}
+
+.cruts-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+
+.crut-in-wrapper {
+    margin: 18px 0 10px 0;
+}
+
+.crut-wrapp {
+    margin-top: 18px;
+}
+
+.num {
+    padding: 15px 19px;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    background: #2D303E;
+    border: 1px solid #393C49;
+    border-radius: 8px;
+}
+
+.inputs {
+    padding: 14px 115px 14px 14px;
+    background: #2D303E;
+    border: 1px solid #393C49;
+    border-radius: 8px;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+}
+
+.bg-btn {
+    padding: 10px 15px;
+    border: 1px solid #FF7CA3;
+}
+
+
+.bg-btn:hover {
+    border: 1px solid #FF7CA3;
+
+}
+
+.dics {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #ABBBC2;
+}
+
+.texts-crut-wrap {
+    padding: 10px 0 20px 0;
+}

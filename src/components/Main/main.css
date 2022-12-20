@@ -1,0 +1,27 @@
+
+.wrapper-main {
+    width: 633px;
+    margin: 0 auto;
+}
+
+
+.choose-text {
+    font-family: 'Barlow';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 140%;
+color: #000000;
+}
+
+.select {
+    background-color: #393C49;
+    color: #fff;
+    padding-left: 50px;
+  /* background-image: url("../../assets/images/"); */
+
+}
+
+.choose {
+    margin-bottom: 70px;
+}
