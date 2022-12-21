@@ -20,7 +20,7 @@ function App() {
       </div>
       <div className='app-wrap-center'>
         <Routes>
-          <Route path='/home/*' element={<Hederstop/> }>
+          <Route path='/home/*' element={<Hederstop/>}>
             <Route index element={<Main />} /> 
             <Route path='cold' element={<h2>Cold</h2>}/>
             <Route path='soup' element={<h2>Soup</h2>}/>

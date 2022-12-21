@@ -6,12 +6,12 @@
 
 
 .choose-text {
-    font-family: 'Barlow';
+   font-family: 'Barlow';
 font-style: normal;
 font-weight: 600;
 font-size: 20px;
 line-height: 140%;
-color: #000000;
+color: #FFFFFF;
 }
 
 .select {
@@ -28,5 +28,5 @@ color: #000000;
 }
 
 .choose {
-    margin-bottom: 70px;
+    margin: 32px 0;
 }
