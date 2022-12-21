@@ -2,10 +2,11 @@ import React from 'react'
 import "./main.css"
 import Image from "../../assets/images/Image 1.png"
 import { Cards } from "../Cards/Cards"
+import { Order } from '../Orders/Order'
 
 export const Main = () => {
     let fakeCard = Array(12).fill(1)
-    console.log(fakeCard);
+
   return (
     <div className='wrapper-main'>
         <div className="choose d-flex justify-content-between">
@@ -25,6 +26,7 @@ export const Main = () => {
                 fakeCard.map(item => <Cards />)
             }
         </ul>
+        <Order/>
     </div>
   )
 }
