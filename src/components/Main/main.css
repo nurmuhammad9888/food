@@ -1,0 +1,32 @@
+
+.wrapper-main {
+    margin: 0 auto;
+    padding-right: 0 !important;
+}
+
+
+.choose-text {
+   font-family: 'Barlow';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 140%;
+color: #FFFFFF;
+}
+
+.select {
+    background-color: #393C49;
+    color: #fff;
+    padding-left: 50px;
+  background-image: url("../../assets/images/arrow-ios-down.png");
+  background-size: 24px;
+  background-position: calc(50%  - 40px);
+  /* background-size: cover;
+  width: 24px;
+  height: 24px; */
+
+}
+
+.choose {
+    margin: 32px 0;
+}
