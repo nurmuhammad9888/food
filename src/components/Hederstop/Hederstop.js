@@ -20,7 +20,7 @@ export const Hederstop = () => {
 			</ul>
 			<ul className="hederstop-bottom-list list-unstyled d-flex">
 				<li>
-					<NavLink className={({isActive}) => isActive ? "hederstop-link hederstop-link-active hederstop-link-line-active" : "hederstop-link"} to={'/home'}>Hot Dishes</NavLink>
+					<NavLink className={({isActive}) => isActive ? "hederstop-link hederstop-link-active hederstop-link-line-active" : "hederstop-link"} to={'/home'}  >Hot Dishes</NavLink>
 				</li>
 				<li>
 					<NavLink className={({isActive}) => isActive ? "hederstop-link hederstop-link-active hederstop-link-line-active" : "hederstop-link"} to={'cold'}>Cold Dishes</NavLink>
@@ -38,7 +38,6 @@ export const Hederstop = () => {
 					<NavLink className={({isActive}) => isActive ? "hederstop-link hederstop-link-active hederstop-link-line-active" : "hederstop-link"} to={'dessert'}>Dessert</NavLink>
 				</li>
 				{/* <NavLink className={({isActive}) => isActive ? "text-decoration-none text-info" : "text-decoration-none"} to="/">Home</NavLink> */}
-				
 			</ul>
 			<Outlet/>
 		</div>

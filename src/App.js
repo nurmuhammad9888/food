@@ -19,7 +19,7 @@ function App() {
       <div className='app-wrap-center'>
         <Routes>
           <Route path='/home/*' element={<Hederstop/> }>
-            <Route index element={<h2>Toshkent</h2>}/> 
+            <Route index element={<h2>Home</h2>}/> 
             <Route path='cold' element={<h2>Cold</h2>}/>
             <Route path='soup' element={<h2>Soup</h2>}/>
             <Route path='grill' element={<h2>Grill</h2>}/>
