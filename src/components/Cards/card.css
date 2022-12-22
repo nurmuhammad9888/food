@@ -1,0 +1,62 @@
+.cards {
+    width: 240px;
+    height: 226px;
+    background: #1F1D2B;
+    border-radius: 16px;
+    margin: 30px 0;
+    position: relative;
+}
+
+.card-image {
+    margin: 0 auto;
+    margin-top: -40px;
+    margin-left: 45px;
+    position: absolute;
+    width: 149px;
+    height: 146px;
+}
+
+.text-wrapper {
+    padding-top: 110px;
+}
+
+.card-title {
+    padding-top: 10px;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    text-align: center;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.card-text {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 8px 0;
+}
+
+.card-texttwo {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: center;
+    color: #ABBBC2;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}

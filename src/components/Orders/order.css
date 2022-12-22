@@ -1,0 +1,53 @@
+.order-wrap {
+    padding: 24px;
+    position: fixed;
+    width: 409px;
+    height: 834px;
+    right: 0px;
+    top: 0px;
+    background: #1F1D2B;
+    border-radius: 8px;
+    color: #FFFFFF;
+}
+
+.order-title {
+    padding-bottom: 10px;
+    font-family: 'Barlow';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 140%;
+color: #FFFFFF;
+}
+
+.btns {
+    background-color: transparent !important;
+}
+
+.order-item {
+    border-bottom: 1px solid gray;
+}
+
+.order-item-text {
+    font-family: 'Barlow';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 140%;
+color: #FFFFFF;
+
+}
+
+.bg-btns {
+    background: #EA7C69;
+    border: none;
+}
+
+.bg-btns:hover {
+    background: #EA7C69;
+}
+
+.texts-bg {
+    border: 1px solid #8b8b8b;
+    color: #EA7C69 !important;
+}

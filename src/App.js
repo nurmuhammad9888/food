@@ -9,6 +9,8 @@ import { Discount } from './pages/Discount/Discount';
 import './assets/styles/main.css';
 import { Heders } from './components/Heders/Heders';
 import { Hederstop } from './components/Hederstop/Hederstop';
+import { Main } from './components/Main/Main'
+
 
 function App() {
 	return (
@@ -18,8 +20,13 @@ function App() {
       </div>
       <div className='app-wrap-center'>
         <Routes>
+<<<<<<< HEAD
           <Route path='/home/*' element={<Hederstop/> }>
             <Route index element={<h2>Home</h2>}/> 
+=======
+          <Route path='/home/*' element={<Hederstop/>}>
+            <Route index element={<Main />} /> 
+>>>>>>> a926139b86017b8ededc0b044b256d3f2263fd4d
             <Route path='cold' element={<h2>Cold</h2>}/>
             <Route path='soup' element={<h2>Soup</h2>}/>
             <Route path='grill' element={<h2>Grill</h2>}/>
