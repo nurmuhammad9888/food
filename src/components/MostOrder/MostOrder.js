@@ -1,6 +1,5 @@
 import React from 'react'
 import "./mostorder.css"
-import OrderImage from "../../assets/images/order-Image 1.png"
 import { Diwes } from '../Diwes/Diwes'
 import { Cricle, Dine, ToGo, Delivery} from "../../assets/images/icons/icons"
 
@@ -20,7 +19,7 @@ export const MostOrder = () => {
               <option value="3">Three</option>
             </select>
         </div>
-        <ul className="spicy-wrap">
+        <ul className="spicy-wrapss">
            {
             CardsArray.map(item => <Diwes />)
            }

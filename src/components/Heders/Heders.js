@@ -31,6 +31,7 @@ export const Heders = () => {
                     <NavLink className={({isActive}) => isActive ? "heders-link actives heders-link-activ-bef" : "heders-link"} to='/logout'> <Logoutimg/> </NavLink>
                 </li>
             </ul>
+            
         )
     }
     
