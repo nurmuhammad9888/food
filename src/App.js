@@ -26,7 +26,7 @@ function App() {
       
             <Route path='cold' element={<h2>Cold</h2>}/>
           <Route path='/' element={<Navigate to="/home" replace={true}/> }/>
-          <Route path='/home/*' element={<Hederstop/> }>
+          <Route path='/home/*' element={<Hederstop/> }/>
             <Route index element={<Main />} />
             <Route path='cold' element={<Main />}/>
             <Route path='soup' element={<h2>Soup</h2>}/>
