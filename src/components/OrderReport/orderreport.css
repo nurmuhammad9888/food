@@ -1,0 +1,106 @@
+.orderreport-wrap {
+    padding: 24px 16px 0px 16px;
+    background: #1F1D2B;
+    border-radius: 8px;
+    height: 510px;
+}
+
+
+.list-itemsjs {
+    height: 340px;
+    overflow-y: scroll;
+}
+
+.list-itemsjs::-webkit-scrollbar {
+    display: none;
+}
+
+.report-title {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    color: #FFFFFF
+}
+
+.selects {
+    width: 128px;
+    height: 45px;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    background: #1F1D2B;
+    border: 1px solid #393C49;
+    text-align: right;
+    background-image: url("../../assets/images/Option.png");
+    background-repeat: no-repeat;
+    background-position: calc(50% - 43px);
+    padding-left: 30px;
+    border-radius: 8px;
+    color: #FFFFFF;
+}
+
+.cust-list {
+    padding: 16px 0;
+}
+
+.item-cus {
+    color: #FFFFFF;
+}
+
+.item-follow {
+    padding: 16px 2px 10px 0;
+}
+
+.cus-one {
+    margin-right: 128px;
+}
+
+.cus-menu {
+    margin-right: 136px;
+}
+
+.cus-pay {
+    margin-right: 61px;
+}
+
+.img-text {
+    margin-right: 70px;
+}
+
+.parag-wraps {
+    margin-right: 40px;
+}
+
+.total-wraps {
+    margin-right: 120px;
+}
+
+.textsin {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #E0E6E9;
+
+}
+
+.parag-wraps {
+    width: 137px;
+}
+
+.comp-btn {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    color: #50D1AA;
+    background: rgba(107, 226, 190, 0.24);
+    border-radius: 30px;
+    border: none;
+}

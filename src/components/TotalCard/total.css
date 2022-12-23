@@ -1,0 +1,51 @@
+.item-total {
+    padding: 14px;
+    width: 200px;
+    background: #1F1D2B;
+    border-radius: 8px;
+
+}
+
+
+.coin-img {
+    padding: 10px;
+    text-align: center;
+    background: #252836;
+    border-radius: 8px;
+}
+
+.caunt {
+    margin: 0 6px 0 12px;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 140%;
+    color: #50D1AA;
+
+}
+
+.ful-num {
+    margin: 8px 0;
+    font-family: 'Barlow';
+font-style: normal;
+font-weight: 600;
+font-size: 28px;
+line-height: 140%;
+color: #FFFFFF;
+
+}
+
+.reven {
+    font-family: 'Barlow';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 130%;
+color: #ABBBC2;
+
+}
+
+.reds {
+    color: #FF7CA3;
+}

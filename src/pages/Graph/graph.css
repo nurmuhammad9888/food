@@ -1,0 +1,28 @@
+.graph-wrapper {
+    width: 90%;
+    margin: 24px;
+}
+
+.text-wrap {
+    padding-bottom: 24px;
+    border-bottom: 1px solid #393C49;
+}
+
+.dash {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+.dates {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #ABBBC2;
+
+}
