@@ -20,7 +20,7 @@ function App() {
       </div>
       <div className='app-wrap-center'>
         <Routes>
-          <Route path='/' element={<Navigate to="/home" replace={true}/>}/>
+          {/* <Route path='/' element={<Navigate to="/home" replace={true}/>}/> */}
           <Route path='/home/*' element={<Hederstop/> } />
             {/* <Route index element={<Main />}/>  */}
       
