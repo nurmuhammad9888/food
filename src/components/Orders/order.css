@@ -13,11 +13,11 @@
 .order-title {
     padding-bottom: 10px;
     font-family: 'Barlow';
-font-style: normal;
-font-weight: 600;
-font-size: 20px;
-line-height: 140%;
-color: #FFFFFF;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    color: #FFFFFF;
 }
 
 .btns {
@@ -30,12 +30,12 @@ color: #FFFFFF;
 
 .order-item-text {
     font-family: 'Barlow';
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 140%;
-color: #FFFFFF;
-
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF;
+    
 }
 
 .bg-btns {

@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 // import { Home } from './pages/Home/Home';
 import { Graph } from './pages/Graph/Graph';
 import { Message } from './pages/Message/Message';
@@ -20,13 +20,10 @@ function App() {
       </div>
       <div className='app-wrap-center'>
         <Routes>
-
+          <Route path='/' element={<Navigate to="/home" replace={true}/>}/>
           <Route path='/home/*' element={<Hederstop/> } />
-            <Route index element={<h2>Home</h2>}/> 
-
-          <Route path='/home/*' element={<Hederstop/>}/>
-            <Route index element={<Main />} /> 
-
+            {/* <Route index element={<Main />}/>  */}
+      
             <Route path='cold' element={<h2>Cold</h2>}/>
             <Route path='soup' element={<h2>Soup</h2>}/>
             <Route path='grill' element={<h2>Grill</h2>}/>
@@ -40,8 +37,8 @@ function App() {
           <Route path='/settings' element={<Settings/> }/>
           <Route path='/logout' element={<Logout/> }/>
           </Routes>
+       
         </div>
-        
       </div>
 		
 	);
