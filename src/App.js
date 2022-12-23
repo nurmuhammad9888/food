@@ -20,19 +20,18 @@ function App() {
       </div>
       <div className='app-wrap-center'>
         <Routes>
-<<<<<<< HEAD
-          <Route path='/home/*' element={<Hederstop/> }>
+
+          <Route path='/home/*' element={<Hederstop/> } />
             <Route index element={<h2>Home</h2>}/> 
-=======
-          <Route path='/home/*' element={<Hederstop/>}>
+
+          <Route path='/home/*' element={<Hederstop/>}/>
             <Route index element={<Main />} /> 
->>>>>>> a926139b86017b8ededc0b044b256d3f2263fd4d
+
             <Route path='cold' element={<h2>Cold</h2>}/>
             <Route path='soup' element={<h2>Soup</h2>}/>
             <Route path='grill' element={<h2>Grill</h2>}/>
             <Route path='appetizer' element={<h2>Appetizer</h2>}/>
             <Route path='dessert' element={<h2>Dessert</h2>}/>
-          </Route>
           
           <Route path='/discount' element={<Discount/> }/>
           <Route path='/graph' element={<Graph/> }/>
@@ -40,9 +39,11 @@ function App() {
           <Route path='/notification' element={<Notification/> }/>
           <Route path='/settings' element={<Settings/> }/>
           <Route path='/logout' element={<Logout/> }/>
-        </Routes>
+          </Routes>
+        </div>
+        
       </div>
-		</div>
+		
 	);
 }
 

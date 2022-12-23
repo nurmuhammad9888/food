@@ -16,7 +16,7 @@ export const Cruts = () => {
                     </p>
                            </div>
                            <div className="crut of-wrap d-flex align-items-center">
-                       <p className='me-4 num'>2</p>
+                       <input type="text" className='form-control inpp'/>
                        <span className=''>$ 4,58</span>
                 </div>
             </div>
@@ -36,7 +36,8 @@ export const Cruts = () => {
                     </p>
                            </div>
                            <div className="crut of-wrap d-flex align-items-center">
-                       <p className='me-4 num'>1</p>
+                           <input type="text" className='form-control inpp'/>
+
                        <span className=''>$ 2,69</span>
                 </div>
             </div>
@@ -56,7 +57,7 @@ export const Cruts = () => {
                     </p>
                            </div>
                            <div className="crut of-wrap d-flex align-items-center">
-                       <p className='me-4 num'>3</p>
+                           <input type="text" className='form-control inpp inpap'/>
                        <span className=''>$ 10,49</span>
                 </div>
             </div>
@@ -76,7 +77,7 @@ export const Cruts = () => {
                     </p>
                            </div>
                            <div className="crut of-wrap d-flex align-items-center">
-                       <p className='me-4 num'>1</p>
+                           <input type="text" className='form-control inpp'/>
                        <span className=''>$ 3,29</span>
                 </div>
             </div>

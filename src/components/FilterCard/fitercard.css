@@ -1,0 +1,53 @@
+.item-follow {
+    padding: 14px 2px 10px 0;
+}
+
+.cus-one {
+    margin-right: 224px;
+}
+
+.cus-menu {
+    margin-right: 228px;
+}
+
+.cus-pay {
+    margin-right: 195px;
+}
+
+.img-text {
+    margin-right: 170px;
+}
+
+.parag-wraps {
+    margin-right: 130px;
+}
+
+.total-wraps {
+    margin-right: 260px;
+}
+
+.textsin {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #E0E6E9;
+
+}
+
+.parag-wraps {
+    width: 137px;
+}
+
+.comp-btn {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    color: #50D1AA;
+    background: rgba(107, 226, 190, 0.24);
+    border-radius: 30px;
+    border: none;
+}
