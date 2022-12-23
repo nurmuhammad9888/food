@@ -2,14 +2,10 @@ import React from 'react'
 import "./heders.css"
 import { NavLink, Link } from 'react-router-dom';
 import { Discountimg, Graphimg, Homeimg, Logo, Logoutimg, Messageimg, Notificationimg, Settingsimg } from '../../assets/images/icons/icons';
-// import { Hederstop } from '../Hederstop/Hederstop';
 
 export const Heders = () => {
     return (
-        // <div className='d-flex'>
             <ul className='heders-list list-unstyled'>
-				{/* <NavLink className={({isActive}) => isActive ? "text-decoration-none text-info" : "text-decoration-none"} to="/">Home</NavLink> */}
-
                 <li className='heders-item-logo'>
                     <Link className="heders-logo" to='/home'> <Logo/> </Link>
                 </li>
@@ -35,7 +31,6 @@ export const Heders = () => {
                     <NavLink className={({isActive}) => isActive ? "heders-link actives heders-link-activ-bef" : "heders-link"} to='/logout'> <Logoutimg/> </NavLink>
                 </li>
             </ul>
-        // </div>
         )
     }
     

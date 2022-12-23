@@ -12,13 +12,12 @@ export const Main = () => {
         <div className="choose d-flex justify-content-between">
             <h2 className='choose-text'>Choose Dishes</h2>
             <form className='form'>
-               <select class="form-select select" aria-label="Default select example">
+                <select class="form-select select" aria-label="Default select example">
                   <option className='option' selected hidden>Dine In</option>
                   <option className='option' value="1">One</option>
                   <option className='option' value="2">Two</option>
                   <option className='option' value="3">Three</option>
                 </select>
-               
             </form>
         </div>
         <ul className='list-unstyled d-flex justify-content-between flex-wrap item-list'>

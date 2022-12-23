@@ -1,0 +1,55 @@
+.settings-big-wrap{
+    padding: 24px;
+}
+.settings-left-list{
+    margin-top: 24px;
+    width: 275px;
+    height: 723px;
+    background: #1F1D2B;
+    border-radius: 8px;
+}
+/* .settings-left-item{
+    padding: 24px;
+} */
+.settings-left-link{
+    padding: 24px;
+    display: block;
+    text-decoration: none;
+    color: #ABBBC2;
+}
+.settings-left-link:hover{
+    color: #EA7C69;
+}
+.settings-left-title{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    color: #FFFFFF;
+    display: inline-block; 
+    margin-left: 9px;
+}
+.settings-left-text{
+    margin-left: 22px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #ABBBC2;
+    line-height: 140%;
+}
+.active{
+    position: relative;
+    background: rgba(234, 124, 105, 0.26);
+    color: #EA7C69;
+}
+.active::before{
+    position: absolute;
+    top: 28px;
+    right: 0;
+    content: '';
+    width: 4px;
+    height: 39px;
+    background: #EA7C69;
+    border-radius: 30px;
+}
+.active .settings-left-title{
+    color: #EA7C69;
+}
