@@ -25,6 +25,10 @@ function App() {
             {/* <Route index element={<Main />}/>  */}
       
             <Route path='cold' element={<h2>Cold</h2>}/>
+          <Route path='/' element={<Navigate to="/home" replace={true}/> }/>
+          <Route path='/home/*' element={<Hederstop/> }>
+            <Route index element={<Main />} />
+            <Route path='cold' element={<Main />}/>
             <Route path='soup' element={<h2>Soup</h2>}/>
             <Route path='grill' element={<h2>Grill</h2>}/>
             <Route path='appetizer' element={<h2>Appetizer</h2>}/>

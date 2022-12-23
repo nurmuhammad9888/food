@@ -6,7 +6,7 @@ import addicon from "../../../assets/images/plus.svg";
 import "./products.css";
 
 export const Products = () => {
-    let fakeCard = Array(11).fill(1)
+    let fakeCard = Array(5).fill(1)
 
     return (
         <div className='products-big-wrap'>
@@ -19,7 +19,7 @@ export const Products = () => {
                             </div>
                             <div className='products-input-wrap'>
                                 <select className='products-select'>
-                                    <option value="Hot Dishes">Manage Categories</option>
+                                    <option hidden >Manage Categories</option>
                                     <option value="Cold Dishes">Cold Dishes</option>
                                     <option value="Soup">Soup</option>
                                     <option value="Grill">Grill</option>
@@ -50,10 +50,6 @@ export const Products = () => {
                         </li>
                     </ul>
                 </div>
-                <Routes>
-                    <Route path='/hot' element={<h2>Hello</h2>}/>
-                </Routes>
-                    {/* <Outlet/> */}
             </div>
             <ul className='products-card-list'>
                 <li className='products-add-btn-item'>
