@@ -1,8 +1,51 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import OrderImage from '../../assets/images/order-Image 1.png';
 import {Trash, Creditcard, Paypal, Crash } from '../../assets/images/icons/icons';
 import './cruts.css';
 export const Cruts = () => {
+	const [value, setValue] = useState(4.58)
+	const [value1, setValue1] = useState(2.69)
+	const [value2, setValue2] = useState(10.49)
+	const [value3, setValue3] = useState(3.29)
+	const [value4, setValue4] = useState(21.03)
+
+	function hisob(evt) {
+		
+		if(evt.key === "Enter") {
+			setValue(evt.target.value * 2.29);
+			
+		}
+	}
+
+	function hisob1(evt) {
+		
+		if(evt.key === "Enter") {
+			setValue1(evt.target.value * 2.29);
+		}
+	}
+
+	function hisob2(evt) {
+		
+		if(evt.key === "Enter") {
+			setValue2(evt.target.value * 3.49);
+		}
+	}
+
+	function hisob3(evt) {
+		
+		if(evt.key === "Enter") {
+			setValue3(evt.target.value * Math.floor(3.29));
+		}
+	}
+
+useEffect(() => {
+	function jami (a,b,c,d) {
+		setValue4((a + b + c + d).toFixed(2));
+	   }
+	
+	   jami(value, value1, value2, value3)
+}, [value, value1, value2, value3])
+
 	return (
 	  <>
 	  <div className='cruts-wrapper'>
@@ -15,8 +58,8 @@ export const Cruts = () => {
 					  </p>
 							 </div>
 							 <div className="crut of-wrap d-flex align-items-center">
-						 <input type="text" className='form-control inpp'/>
-						 <span className=''>$ 4,58</span>
+						 <input type="number" defaultValue="2" onKeyUp={(evt) => hisob(evt)}  className='form-control text-danger inpp'/>
+						 <span className='inputvalue'>${value}</span>
 				  </div>
 			  </div>
 				  <div className="input-warp d-flex justify-content-between">
@@ -35,9 +78,9 @@ export const Cruts = () => {
 					  </p>
 							 </div>
 							 <div className="crut of-wrap d-flex align-items-center">
-							 <input type="text" className='form-control inpp'/>
+							 <input type="number" defaultValue="1" onKeyUp={(evt) => hisob1(evt)}   className='form-control text-danger inpp'/>
   
-						 <span className=''>$ 2,69</span>
+						 <span className=''>${value1}</span>
 				  </div>
 			  </div>
 				  <div className="input-warp d-flex justify-content-between">
@@ -56,8 +99,8 @@ export const Cruts = () => {
 					  </p>
 							 </div>
 							 <div className="crut of-wrap d-flex align-items-center">
-							 <input type="text" className='form-control inpp inpap'/>
-						 <span className=''>$ 10,49</span>
+							 <input type="number" defaultValue="3"  onKeyUp={(evt) => hisob2(evt)}  className='form-control text-danger inpp inpap'/>
+						 <span className=''>$ {value2}</span>
 				  </div>
 			  </div>
 				  <div className="input-warp d-flex justify-content-between">
@@ -76,8 +119,8 @@ export const Cruts = () => {
 					  </p>
 							 </div>
 							 <div className="crut of-wrap d-flex align-items-center">
-							 <input type="text" className='form-control inpp'/>
-						 <span className=''>$ 3,29</span>
+							 <input type="number" defaultValue="1" onKeyUp={(evt) => hisob3(evt)}  className='form-control text-danger inpp'/>
+						 <span className=''>$ {value3}</span>
 				  </div>
 			  </div>
 				  <div className="input-warp d-flex justify-content-between">
@@ -95,7 +138,7 @@ export const Cruts = () => {
 		</div>
 		<div className="disc-wrap d-flex justify-content-between align-items-center">
 		  <p className='dics'>Sub total</p>
-		  <p className='usd'>$ 21,03</p>
+		  <p className='usd'>${value4}</p>
 		</div>
 	  </div>
 		<div className="btn-wrap">

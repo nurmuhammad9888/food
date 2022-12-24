@@ -2,12 +2,12 @@
     padding: 24px 16px 0px 16px;
     background: #1F1D2B;
     border-radius: 8px;
-    height: 510px;
+    height: 455px;
 }
 
 
 .list-itemsjs {
-    height: 340px;
+    height: 300px;
     overflow-y: scroll;
 }
 

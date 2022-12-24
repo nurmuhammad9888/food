@@ -39,10 +39,10 @@ function App() {
           <Route path='/message' element={<Message/> }/>
           <Route path='/notification' element={<Notification/> }/>
           <Route path='/settings' element={<Settings/> }/>
-          <Route path='/logout' element={<Logout/> }/>
+          <Route path='/logout' element={<Logout/> }/> 
           </Routes>
        
-        </div>
+        </div> 
       </div>
 		
 	);
