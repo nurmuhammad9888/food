@@ -155,10 +155,10 @@ useEffect(() => {
 	  <div>
 	 <h3 className=' text-canvas'>Payment Method</h3>
 	 <div className="card-wrap d-flex gap-2 my-3">
-	  <div className="card-one">
+	  	 <div className='card-one'>
 	  <Creditcard />
 	  <p>Credit card</p>
-	  </div>
+	 	 </div>
 	  <div className="card-two">
 	  <Paypal />
 	  <p>Paypal</p>
