@@ -9,26 +9,26 @@ export const Heders = () => {
                 <li className='heders-item-logo'>
                     <Link className="heders-logo" to='/home'> <Logo/> </Link>
                 </li>
-                <li className='heders-item activ-item'>
-                    <NavLink className={({isActive}) => isActive ? "heders-link actives heders-link-activ-bef" : "heders-link"} to='/home'> <Homeimg/> </NavLink>
+                <li className='heders-item '>
+                    <NavLink className={({isActive}) => isActive ? "heders-link actives heders-link-activ-bef" : "heders-link"} to='/home'> <span className='active-header'><Homeimg/></span> </NavLink>
                 </li>
                 <li className='heders-item'>
-                    <NavLink className={({isActive}) => isActive ? "heders-link actives heders-link-activ-bef" : "heders-link"} to='/discount'> <Discountimg/> </NavLink>
+                    <NavLink className={({isActive}) => isActive ? "heders-link actives heders-link-activ-bef" : "heders-link"} to='/discount'> <span className='active-header'><Discountimg/></span> </NavLink>
                 </li>
                 <li className='heders-item'>
-                    <NavLink className={({isActive}) => isActive ? "heders-link actives heders-link-activ-bef" : "heders-link"} to='/graph'> <Graphimg/> </NavLink>
+                    <NavLink className={({isActive}) => isActive ? "heders-link actives heders-link-activ-bef" : "heders-link"} to='/graph'> <span className='active-header'><Graphimg/></span>  </NavLink>
                 </li>
                 <li className='heders-item'>
-                    <NavLink className={({isActive}) => isActive ? "heders-link actives heders-link-activ-bef" : "heders-link"} to='/message'> <Messageimg/> </NavLink>
+                    <NavLink className={({isActive}) => isActive ? "heders-link actives heders-link-activ-bef" : "heders-link"} to='/message'> <span className='active-header'><Messageimg/></span>  </NavLink>
                 </li>
                 <li className='heders-item'>
-                    <NavLink className={({isActive}) => isActive ? "heders-link actives heders-link-activ-bef" : "heders-link"} to='/notification'> <Notificationimg/> </NavLink>
+                    <NavLink className={({isActive}) => isActive ? "heders-link actives heders-link-activ-bef" : "heders-link"} to='/notification'> <span className='active-header'><Notificationimg/></span>  </NavLink>
                 </li>
                 <li className='heders-item'>
-                    <NavLink className={({isActive}) => isActive ? "heders-link actives heders-link-activ-bef" : "heders-link"} to='/settings'> <Settingsimg/></NavLink>
+                    <NavLink className={({isActive}) => isActive ? "heders-link actives heders-link-activ-bef" : "heders-link"} to='/settings'> <span className='active-header'><Settingsimg/></span> </NavLink>
                 </li>
                 <li className='heders-item'>
-                    <NavLink className={({isActive}) => isActive ? "heders-link actives heders-link-activ-bef" : "heders-link"} to='/logout'> <Logoutimg/> </NavLink>
+                    <NavLink className={({isActive}) => isActive ? "heders-link actives heders-link-activ-bef" : "heders-link"} to='/logout'> <span className='active-header'><Logoutimg/></span> </NavLink>
                 </li>
             </ul>
             
