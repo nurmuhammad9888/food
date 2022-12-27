@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink, Outlet, Route, Routes } from 'react-router-dom';
+import { NavLink, Outlet } from 'react-router-dom';
 import './settings.css';
 import {
 	Heart,
@@ -50,8 +50,7 @@ export const Settings = () => {
 								className={({ isActive }) =>
 									isActive ? 'settings-left-link active' : 'settings-left-link'
 								}
-								end
-								to={'/settings'}
+								to={'products'}
 							>
 								<DiscountSettings />
 								<h3 className="settings-left-title">Products Management</h3>

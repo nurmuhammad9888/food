@@ -1,12 +1,15 @@
-import React from 'react';
-import { NavLink, Route, Routes } from 'react-router-dom';
+import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import { ProductsCard } from '../ProductsCard/ProductsCard';
 import addicon from "../../../assets/images/plus.svg";
 
 import "./products.css";
+import { Modal } from '../../../components/Modal/Modal';
 
 export const Products = () => {
     let fakeCard = Array(5).fill(1)
+    const [ modal, setModalState ] = useState({ state: false, });
+    const openModal = () => { setModalState({ state: true, title: "Add new product item to list", cancelBtn: "Cancel", addtBtn: "Add", })};
 
     return (
         <div className='products-big-wrap'>
@@ -31,37 +34,38 @@ export const Products = () => {
                     </ul>
                     <ul className="products-bottom-list list-unstyled d-flex">
                         <li>
-                            <NavLink className={({isActive}) => isActive ? "hederstop-link hederstop-link-active hederstop-link-line-active" : "hederstop-link"} to={'hot'} end>Hot Dishes</NavLink>
+                            <NavLink className={({isActive}) => isActive ? "hederstop-link hederstop-link-active hederstop-link-line-active" : "hederstop-link"} to={'hott'} end >Hot Dishes</NavLink>
                         </li>
                         <li>
-                            <NavLink className={({isActive}) => isActive ? "hederstop-link hederstop-link-active hederstop-link-line-active" : "hederstop-link"} to={'cold'}>Cold Dishes</NavLink>
+                            <NavLink className={({isActive}) => isActive ? "hederstop-link hederstop-link-active hederstop-link-line-active" : "hederstop-link"} to={'coldt'}>Cold Dishes</NavLink>
                         </li>
                         <li>
-                            <NavLink className={({isActive}) => isActive ? "hederstop-link hederstop-link-active hederstop-link-line-active" : "hederstop-link"} to={'soup'}>Soup</NavLink>
+                            <NavLink className={({isActive}) => isActive ? "hederstop-link hederstop-link-active hederstop-link-line-active" : "hederstop-link"} to={'soupt'}>Soup</NavLink>
                         </li>
                         <li>
-                            <NavLink className={({isActive}) => isActive ? "hederstop-link hederstop-link-active hederstop-link-line-active" : "hederstop-link"} to={'grill'}>Grill</NavLink>
+                            <NavLink className={({isActive}) => isActive ? "hederstop-link hederstop-link-active hederstop-link-line-active" : "hederstop-link"} to={'grillt'}>Grill</NavLink>
                         </li>
                         <li>
-                            <NavLink className={({isActive}) => isActive ? "hederstop-link hederstop-link-active hederstop-link-line-active" : "hederstop-link"} to={'appetizer'}>Appetizer</NavLink>
+                            <NavLink className={({isActive}) => isActive ? "hederstop-link hederstop-link-active hederstop-link-line-active" : "hederstop-link"} to={'appetizert'}>Appetizer</NavLink>
                         </li>
                         <li>
-                            <NavLink className={({isActive}) => isActive ? "hederstop-link hederstop-link-active hederstop-link-line-active" : "hederstop-link"} to={'dessert'}>Dessert</NavLink>
+                            <NavLink className={({isActive}) => isActive ? "hederstop-link hederstop-link-active hederstop-link-line-active" : "hederstop-link"} to={'dessertt'}>Dessert</NavLink>
                         </li>
                     </ul>
                 </div>
             </div>
             <ul className='products-card-list'>
                 <li className='products-add-btn-item'>
-                    <button className='products-add-btn'>
+                    <button className='products-add-btn' onClick={openModal}>
                     <img className='products-card-add-img' src={addicon} width="15" height="15" alt="add icon" />
                         <span className='products-add-btn-text'>Add new dish</span>
                     </button>
                 </li>
                 {
-                    fakeCard.map(item => <ProductsCard />)
+                    fakeCard.map(item => <ProductsCard setModalState={setModalState} />)
                 }
             </ul>
+                {modal.state && ( <Modal title={modal.title} cancelBtn={modal.cancelBtn} addtBtn={modal.addtBtn} setModalState={setModalState} /> )}
         </div>
         )
     }
