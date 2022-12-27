@@ -1,6 +1,5 @@
 import React from 'react'
 import "./main.css"
-import Image from "../../assets/images/Image 1.png"
 import { Cards } from "../Cards/Cards"
 import { Order } from '../Orders/Order'
 
