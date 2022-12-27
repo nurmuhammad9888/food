@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
 import "./hederstop.css";
 import { Search } from '../../assets/images/icons/icons';
-import { Main } from '../Main/Main';
+// import { Main } from '../Main/Main';
 
 export const Hederstop = () => {
 	return (
@@ -41,7 +41,7 @@ export const Hederstop = () => {
 					</li>
 				</ul>
 			</div>
-				<Main />
+				<Outlet />
 		</div>
 
 		
