@@ -25,8 +25,18 @@ function App() {
       </div>
       <div className='app-wrap-center'>
         <Routes>
+
+          {/* <Route path='/' element={<Navigate to="/home" replace={true}/>}/> */}
+          <Route path='/home/*' element={<Hederstop/> } />
+            {/* <Route index element={<Main />}/>  */}
+      
+            <Route path='cold' element={<h2>Cold</h2>}/>
+          <Route path='/' element={<Navigate to="/home" replace={true}/> }/>
+          <Route path='/home/*' element={<Hederstop/> }/>
+
           <Route path='/' element={<Navigate to="/home" replace={true}/>}/>
           <Route path='/home/*' element={<Hederstop/> } > 
+
             <Route index element={<Main />} />
             <Route path='cold' element={<Clod/>}/>
             <Route path='soup' element={<Soup/>}/>
@@ -38,6 +48,13 @@ function App() {
           <Route path='/graph' element={<Graph/> }/>
           <Route path='/message' element={<Message/> }/>
           <Route path='/notification' element={<Notification/> }/>
+
+          <Route path='/settings' element={<Settings/> }/>
+          <Route path='/logout' element={<Logout/> }/> 
+          </Routes>
+       
+        </div> 
+
 
       <Route path='/settings' element={<Navigate to="products" replace={true}/>}/>
           {/* <Route path='/products' element={<Navigate to="coldt" replace={true}/>}/> */}
@@ -54,6 +71,7 @@ function App() {
           <Route path='/logout' element={<Logout/> }/>
           </Routes>
         </div>
+
       </div>
 		
 	);
