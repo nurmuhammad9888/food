@@ -20,14 +20,14 @@ export const MostOrder = () => {
             </select>
         </div>
         <ul className="spicy-wrapss">
-           {
-            CardsArray.map(item => <Diwes />)
-           }
+            {
+              CardsArray.map(item => <Diwes />)
+            }
         </ul>
         <button className='btn-view' type='button'>View All</button>
         </div>
     <div className="most-botm">
-         <div className="today-wrap d-flex justify-content-between align-items-center">
+          <div className="today-wrap d-flex justify-content-between align-items-center">
             <h3 className='most-text'>Most Ordered</h3>
             <select className="form-select selectt" aria-label="Default select example">
               <option value="1">Today</option>

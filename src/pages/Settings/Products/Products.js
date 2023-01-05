@@ -1,15 +1,23 @@
-import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { NavLink, Route, Routes } from 'react-router-dom';
 import { ProductsCard } from '../ProductsCard/ProductsCard';
 import addicon from "../../../assets/images/plus.svg";
 
 import "./products.css";
 import { Modal } from '../../../components/Modal/Modal';
+import axios from 'axios';
 
 export const Products = () => {
-    let fakeCard = Array(5).fill(1)
+
+    const [data , setData] = useState([])
     const [ modal, setModalState ] = useState({ state: false, });
-    const openModal = () => { setModalState({ state: true, title: "Add new product item to list", cancelBtn: "Cancel", addtBtn: "Add", })};
+    const openModal = () => { setModalState({ state: true, title: "Add new product item to list", cancelBtn: "Cancel", addtBtn: "Add", id : 1 })};
+
+        useEffect(() =>{
+		axios.get('http://localhost:5000/food/1')
+		.then(res => setData(res.data))
+		.catch(err => console.log(err))
+	},[])
 
     return (
         <div className='products-big-wrap'>
@@ -34,7 +42,7 @@ export const Products = () => {
                     </ul>
                     <ul className="products-bottom-list list-unstyled d-flex">
                         <li>
-                            <NavLink className={({isActive}) => isActive ? "hederstop-link hederstop-link-active hederstop-link-line-active" : "hederstop-link"} to={'hott'} end >Hot Dishes</NavLink>
+                            <NavLink className={({isActive}) => isActive ? "hederstop-link hederstop-link-active hederstop-link-line-active" : "hederstop-link"} to={'/settings/products'} end >Hot Dishes</NavLink>
                         </li>
                         <li>
                             <NavLink className={({isActive}) => isActive ? "hederstop-link hederstop-link-active hederstop-link-line-active" : "hederstop-link"} to={'coldt'}>Cold Dishes</NavLink>
@@ -62,10 +70,18 @@ export const Products = () => {
                     </button>
                 </li>
                 {
-                    fakeCard.map(item => <ProductsCard setModalState={setModalState} />)
+                    data.map(item => <ProductsCard {...item} setModalState={setModalState} />)
                 }
             </ul>
-                {modal.state && ( <Modal title={modal.title} cancelBtn={modal.cancelBtn} addtBtn={modal.addtBtn} setModalState={setModalState} /> )}
+                {modal.state && ( <Modal setData={setData} title={modal.title} cancelBtn={modal.cancelBtn} addtBtn={modal.addtBtn} setModalState={setModalState} id={modal.id} /> )}
+                <Routes>
+                        <Route path='/' element={<h2>Hot</h2>}/>
+                        <Route path='coldt' element={<h2>Soup</h2>}/>
+                        <Route path='soupt' element={<h2>Grill</h2>}/>
+                        <Route path='grillt' element={<h2>Appetizer</h2>}/>
+                        <Route path='appetizert' element={<h2>Dessert</h2>}/>
+                        <Route path='dessertt' element={<h2>Dessert</h2>}/>
+                </Routes>
         </div>
         )
     }

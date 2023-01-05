@@ -1,10 +1,10 @@
-import React from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
 import "./hederstop.css";
 import { Search } from '../../assets/images/icons/icons';
 // import { Main } from '../Main/Main';
 
 export const Hederstop = () => {
+
 	return (
 		<div className='hederstop-wrap'>
 			<div className='hederstop-wrapper'>
@@ -22,7 +22,7 @@ export const Hederstop = () => {
 				</ul>
 				<ul className="hederstop-bottom-list list-unstyled d-flex">
 					<li>
-						<NavLink className={({isActive}) => isActive ? "hederstop-link hederstop-link-active hederstop-link-line-active" : "hederstop-link"} to={'/home'} end>Hot Dishes</NavLink>
+						<NavLink className={({isActive}) => isActive ? "hederstop-link hederstop-link-active hederstop-link-line-active" : "hederstop-link"} to={'/home'} end >Hot Dishes</NavLink>
 					</li>
 					<li>
 						<NavLink className={({isActive}) => isActive ? "hederstop-link hederstop-link-active hederstop-link-line-active" : "hederstop-link"} to={'cold'}>Cold Dishes</NavLink>
@@ -43,7 +43,5 @@ export const Hederstop = () => {
 			</div>
 				<Outlet />
 		</div>
-
-		
 	);
 };

@@ -27,7 +27,6 @@
     width: 178px;
     padding: 14px 16px 16px 44px;
     border: 1px solid #393C49;
-    /* filter: drop-shadow(0px 8px 24px rgba(146, 136, 224, 0.3)); */
     border-radius: 8px;
     font-weight: 600;
     font-size: 14px;
@@ -54,6 +53,7 @@
     margin-top: 16px;
     width: 100%;
     max-width: 221px;
+    height: 299px;
     background: #1F1D2B;
     border: 1px dashed #EA7C69;
     border-radius: 8px;
