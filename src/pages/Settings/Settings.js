@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink, Outlet } from 'react-router-dom';
+import { NavLink, Outlet, Route, Routes } from 'react-router-dom';
 import './settings.css';
 import {
 	Heart,
@@ -9,6 +9,7 @@ import {
 	Security,
 	About,
 } from '../../assets/images/icons/icons';
+import { Products } from './Products/Products';
 
 export const Settings = () => {
 	return (
@@ -118,6 +119,9 @@ export const Settings = () => {
 				<div>
 					<Outlet />
 				</div>
+				<Routes>
+					<Route path="products/*" element={<Products />} />
+				</Routes>
 			</div>
 		</div>
 	);

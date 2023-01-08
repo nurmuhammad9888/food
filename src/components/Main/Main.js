@@ -1,11 +1,8 @@
-import React from 'react'
 import "./main.css"
-import Image from "../../assets/images/Image 1.png"
 import { Cards } from "../Cards/Cards"
 import { Order } from '../Orders/Order'
 
 export const Main = () => {
-    let fakeCard = Array(12).fill(1)
 
   return (
     <div className='wrapper-main'>
@@ -21,9 +18,7 @@ export const Main = () => {
             </form>
         </div>
         <ul className='list-unstyled d-flex justify-content-between flex-wrap item-list'>
-            {
-                fakeCard.map(item => <Cards />)
-            }
+            <Cards/>
         </ul>
         <Order/>
     </div>
